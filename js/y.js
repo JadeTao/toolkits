@@ -1,0 +1,1 @@
+const reverseFlatten = (l, arr) => ((f => f(f))(f => (arr, s) => (s.length > l ? f(f)([...arr, s.splice(0, l)], s) : arr)))([], [].concat(arr))
